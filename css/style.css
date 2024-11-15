@@ -133,6 +133,7 @@ body {
     opacity: 100%;
     color: var(--spotify-grey);
     transition: 0.2s var(--ease-1);
+    transform: rotate(0deg);
 
 
 }
@@ -140,6 +141,7 @@ body {
     grid-row: 1;
     grid-column: 1;
     opacity: 0%;
+    transform: rotate(25deg);
     color: var(--spotify-green);
     transition: 0.2s var(--ease-1);
 
@@ -147,9 +149,11 @@ body {
 
 .album__action.checked .icon--add{
     opacity: 0%;
+    transform: rotate(-25deg);
 }
 .album__action.checked .icon--check{
     opacity: 100%;
+    transform: rotate(0deg);
 }
 
 /*
